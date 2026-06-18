@@ -69,7 +69,7 @@ const Home = () => {
               }
               <h1 className='text-white text-5xl font-black uppercase leading-tight tracking-wide'>{ele.heading}</h1>
               {
-                ele.description && <p className='text-white/80 text-sm leading-relaxed max-w-md'>{ele.description}</p>
+                ele.description && <p className='text-white/80 text-sm max-w-md'>{ele.description}</p>
               }
               <button className='flex items-center justify-between gap-6 uppercase text-white text-xs tracking-widest border border-white/50 px-6 py-3 hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mt-2'>
                 {ele.button}

@@ -62,32 +62,25 @@ const Home = () => {
             {
               ele.video ? <video src={ele.video} autoPlay muted loop playsInline className='absolute top-0 left-0 w-full h-full object-cover'/> : <img src={ele.image} alt={ele.heading} className='absolute top-0 left-0 w-full h-full object-cover' />
             }
-
             <div className='absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-black to-transparent z-10' />
-
             <div className={`absolute bottom-50 z-20 flex flex-col items-start gap-4 max-w-xl ${ele.image ? 'right-20' : 'left-20'}`}>
               {
                 ele.launchdate && <p className='text-white/70 text-xs uppercase tracking-widest'>{ele.launchdate}</p>
               }
-
               <h1 className='text-white text-5xl font-black uppercase leading-tight tracking-wide'>
                 {ele.heading}
               </h1>
-
               {
                 ele.description && <p className='text-white/80 text-sm leading-relaxed max-w-md'>{ele.description}</p>
               }
-
               <button className='flex items-center justify-between gap-6 uppercase text-white text-xs tracking-widest border border-white/50 px-6 py-3 hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mt-2'>
                 {ele.button}
                 <span>
                   <FaArrowRight />
                 </span>
               </button>
-
             </div>
           </div>
-
         </div>
       ))}
     </div>

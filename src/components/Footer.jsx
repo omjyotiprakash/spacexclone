@@ -1,12 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
     <div className='w-screen bg-linear-to-t from-[black]/10 to-transparent px-10 py-5 flex items-center justify-between'>
 
       <div className='w-12 h-12 bg-[#181819] rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-all duration-200'>
-        <span className='text-white text-xs font-bold'>X</span>
+        <span className='text-white text-xs font-bold'><FaXTwitter /></span>
       </div>
 
       <ul className='flex items-center gap-10 uppercase text-[11px] tracking-widest text-white/70'>

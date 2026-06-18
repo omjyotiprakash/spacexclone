@@ -60,7 +60,7 @@ const Home = () => {
         <div key={index}>
           <div className='relative w-screen h-screen'>
             {
-              ele.video ? <video src={ele.video} autoPlay muted loop playsInline className='absolute top-0 left-0 w-full h-full object-cover'/> : <img src={ele.image} alt={ele.heading} className='absolute top-0 left-0 w-full h-full object-cover' />
+              ele.video ? <video src={ele.video} autoPlay muted loop playsInline className='absolute top-0 left-0 w-full h-full object-cover'/> : <img src={ele.image} className='absolute top-0 left-0 w-full h-full object-cover' />
             }
             <div className='absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-black to-transparent z-10' />
             <div className={`absolute bottom-50 z-20 flex flex-col items-start gap-4 max-w-xl ${ele.image ? 'right-20' : 'left-20'}`}>

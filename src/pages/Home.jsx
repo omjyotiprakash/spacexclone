@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa';
 
 const Home = () => {
   const data = [
@@ -79,7 +80,9 @@ const Home = () => {
 
               <button className='flex items-center justify-between gap-6 uppercase text-white text-xs tracking-widest border border-white/50 px-6 py-3 hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mt-2'>
                 {ele.button}
-                <span>→</span>
+                <span>
+                  <FaArrowRight />
+                </span>
               </button>
 
             </div>
